@@ -36,11 +36,11 @@ jobs:
       run: terraform init -input=false
 
     # kill 
-    - name: Terraform kill
-      env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      run: terraform force-unlock -force 2353acac-ea25-6485-33ff-9ddcd6adc187
+    #- name: Terraform kill
+    #  env:
+    #    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #  run: terraform force-unlock -force 2353acac-ea25-6485-33ff-9ddcd6adc187
 
 
      # validate 
