@@ -28,3 +28,4 @@ connection {
     private_key = file("${path.module}/demo.pem")
     host = self.public_ip    
     } 
+}
