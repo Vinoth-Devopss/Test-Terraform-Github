@@ -9,7 +9,7 @@ variable "instance_type" {
 }
 
 variable "prod-api_key_name" {
-  default = "Prod-API-Dev-Vinoth"
+  default = "Prod-API-Dev-vinoth"
 }
 
 variable "vpc_id" {
