@@ -39,7 +39,7 @@ module "SECURITY-GROUP" {
   vpc_id = module.VPC.vpc_id
   }
 
-# Create Prod Vinoth-TF EC2.
+# Create Prod Vinoth-TF EC2..
 module "EC2" {
   source = "./Modules/EC2"
 
