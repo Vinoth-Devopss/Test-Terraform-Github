@@ -62,7 +62,7 @@ variable "security_group" {
 
 variable "tag_name" {
   description = "Tag Name of for Ec2 instance"
-  default = "prod-api.astrocure.co.in"
+  default = "Prod-API-Dev-vinoth"
 }
 
 variable "ami_id" {
