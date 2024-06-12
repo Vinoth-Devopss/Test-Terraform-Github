@@ -7,3 +7,8 @@ module "Backend-S3" {
 module "DYNAMODB" {
   source = "./Modules/DYNAMODB"
 }
+
+# Create Prod Vinoth-TF DYNAMODB..
+module "IAM" {
+  source = "./Modules/IAM"
+}
