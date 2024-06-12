@@ -1,6 +1,14 @@
+
 resource "aws_iam_user" "administrator" {
-  name = "Administrator"
+  name = "administrator"
+  path = "/system/"
+
+  tags = {
+    tag-key = "tag-value"
+  }
 }
 
-data "aws_iam_policy" "administrator_access" {
-  name = "AdministratorAccess"
+resource "aws_iam_user_policy_attachment" "my_iam_user_policy_attachment" {
+  user       = aws_iam_user.administrator.name
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
