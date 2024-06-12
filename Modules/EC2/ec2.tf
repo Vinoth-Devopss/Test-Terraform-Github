@@ -25,6 +25,6 @@ connection {
     type = "ssh"
     user = "administrator"
     password = var.administrator_password
-    private_key = file("${path.module}/prod-administrator.pem")
+    private_key = file("${path.module}/demo.pem")
     host = self.public_ip    
     } 
