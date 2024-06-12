@@ -57,7 +57,7 @@ variable "instance_type" {
 
 variable "security_group" {
   description = "Name of security group"
-  default = "Prod-Astrovidhi-SG"
+  default = "Dev-vinoth-SG"
 }
 
 variable "tag_name" {
