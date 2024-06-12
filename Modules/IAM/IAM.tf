@@ -4,3 +4,4 @@ resource "aws_iam_user" "administrator" {
 
 data "aws_iam_policy" "administrator_access" {
   name = "AdministratorAccess"
+}
