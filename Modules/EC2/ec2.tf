@@ -1,6 +1,6 @@
 #Create a new Vinoth-TF prod API -1 EC2 launch configuration..
 
-resource "aws_instance" "Dev-vinoth-TF" {
+resource "aws_instance" "prod-api-1" {
   ami           = var.ami_id
   instance_type = var.instance_type
   key_name      = var.prod-api_key_name
@@ -10,7 +10,7 @@ resource "aws_instance" "Dev-vinoth-TF" {
   disable_api_termination = true
   
   tags = {
-Name = "Dev-vinoth-TF"
+Name = "prod-api-1-Dev-vinoth-TF"
 }
 
 root_block_device {
