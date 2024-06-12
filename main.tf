@@ -8,7 +8,7 @@ module "DYNAMODB" {
   source = "./Modules/DYNAMODB"
 }
 
-# Create Prod Vinoth-TF DYNAMODB..
+# Create Prod Vinoth-TF IAM..
 module "IAM" {
   source = "./Modules/IAM"
 }
