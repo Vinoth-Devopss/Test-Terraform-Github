@@ -32,3 +32,9 @@ module "VPC" {
   private-route-table-1_id = module.VPC.vpc_id
   private-subnet-1-route-table-association_id = module.VPC.vpc_id
   }
+
+# Create Prod Vinoth-TF SECURITY-GROUP..
+module "SECURITY-GROUP" {
+  source = "./Modules/SECURITY-GROUP"
+  vpc_id = module.VPC.vpc_id
+  }
