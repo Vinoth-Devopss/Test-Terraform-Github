@@ -11,12 +11,12 @@ module "DYNAMODB" {
 
 */
 
-/*
+
 # Create Prod Vinoth-TF IAM..
 module "IAM" {
   source = "./Modules/IAM"
 }
-*/
+
 
 # Create Prod Vinoth-TF  VPC..
 module "VPC" {
