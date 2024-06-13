@@ -12,6 +12,8 @@ module "DYNAMODB" {
 */
 
 
+/*
+
 # Create Prod Vinoth-TF IAM..
 module "IAM" {
   source = "./Modules/IAM"
@@ -41,7 +43,7 @@ module "SECURITY-GROUP" {
   vpc_id = module.VPC.vpc_id
   }
 
-# Create Prod Vinoth-TF EC2.
+# Create Prod Vinoth-TF EC2..
 module "EC2" {
   source = "./Modules/EC2"
 
@@ -50,4 +52,5 @@ module "EC2" {
   public-subnet-1_id = module.VPC.public-subnet-1_id
   public-subnet-2_id = module.VPC.public-subnet-2_id
   }
+*/
 

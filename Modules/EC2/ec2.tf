@@ -20,12 +20,5 @@ root_block_device {
     volume_size           = "20"
     volume_type           = "gp3"
   }
-
-connection {
-    type = "ssh"
-    user = "administrator"
-    password = var.administrator_password
-    private_key = file("${path.module}/demo.pem")
-    host = self.public_ip    
-    } 
 }
+

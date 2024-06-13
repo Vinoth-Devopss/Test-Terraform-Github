@@ -7,7 +7,7 @@ type = string
 }
 
 variable "vpc-id" {
-default = "vpc-04e59399751d55828"
+default = "vpc-0e7ddc6e00fc95239"
 description = "Dev VPC ID"
 type = string
 }
@@ -52,12 +52,12 @@ variable "key_name" {
 
 variable "instance_type" {
   description = "instance type for ec2"
-  default = "t3.medium"
+  default = "t3.micro"
 }
 
 variable "security_group" {
   description = "Name of security group"
-  default = "Dev-vinoth-SG"
+  default = "sg-003d7d449ac65017a"
 }
 
 variable "tag_name" {
@@ -67,6 +67,6 @@ variable "tag_name" {
 
 variable "ami_id" {
   description = "AMI ID for RHEL Ec2 instance"
-  default = "ami-0d4e93e986be449cf"
+  default = "ami-008616ec4a2c6975e"
 }
 
